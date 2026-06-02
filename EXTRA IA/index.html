@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXTRA IA - Crie Vídeos em Escala com Inteligência Artificial</title>
+    <meta name="description"
+        content="Assinatura mensal de R$17,90. Aprenda a criar vídeos com IA em escala, sem aparecer, sem editar manualmente e sem complicação.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="logopura.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s){
+        if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)
+      }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      
+      fbq('init', '970377285921767');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=970377285921767&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- UTMify -->
+    <script
+      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+      data-utmify-prevent-xcod-sck
+      data-utmify-prevent-subids
+      async
+      defer
+    ></script>
+    <!-- End UTMify -->
+</head>
+
+<body>
+
+    <!-- 1. Header fixo -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo" style="display: flex; align-items: center; cursor: pointer; gap: 8px;">
+                <svg class="brand-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="neonGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#b026ff">
+                                <animate attributeName="stop-color" values="#b026ff;#d055ff;#b026ff" dur="4s"
+                                    repeatCount="indefinite" />
+                            </stop>
+                            <stop offset="100%" stop-color="#7000ff">
+                                <animate attributeName="stop-color" values="#7000ff;#b026ff;#7000ff" dur="4s"
+                                    repeatCount="indefinite" />
+                            </stop>
+                        </linearGradient>
+                        <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feGaussianBlur stdDeviation="2" result="blur1" />
+                            <feGaussianBlur stdDeviation="4" result="blur2" />
+                            <feMerge>
+                                <feMergeNode in="blur2" />
+                                <feMergeNode in="blur1" />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <g stroke="url(#neonGradient)" stroke-width="4" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round" filter="url(#neonGlow)">
+                        <!-- Top line & circle -->
+                        <circle cx="22" cy="38" r="3" />
+                        <path d="M25,38 L44,38" />
+
+                        <!-- Middle line & circle -->
+                        <circle cx="16" cy="50" r="3" />
+                        <path d="M19,50 L28,50 L34,44 L52,44" />
+
+                        <!-- Bottom line & circle -->
+                        <circle cx="22" cy="62" r="3" />
+                        <path d="M25,62 L28,62 L34,56 L44,56" />
+
+                        <!-- Arrow -->
+                        <path
+                            d="M44,38 L44,35 C44,30 48,29 52,31 L84,47 C88,49 88,51 84,53 L52,69 C48,71 44,70 44,65 L44,56" />
+                    </g>
+                    <g fill="#fff" filter="url(#neonGlow)">
+                        <circle r="2">
+                            <animateMotion dur="2s" repeatCount="indefinite" path="M25,38 L44,38" />
+                            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.2;0.8;1" dur="2s"
+                                repeatCount="indefinite" />
+                        </circle>
+                        <circle r="2">
+                            <animateMotion dur="2.5s" repeatCount="indefinite" path="M19,50 L28,50 L34,44 L52,44" />
+                            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.2;0.8;1" dur="2.5s"
+                                repeatCount="indefinite" />
+                        </circle>
+                        <circle r="2">
+                            <animateMotion dur="3s" repeatCount="indefinite" path="M25,62 L28,62 L34,56 L44,56" />
+                            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.2;0.8;1" dur="3s"
+                                repeatCount="indefinite" />
+                        </circle>
+                    </g>
+                </svg>
+                Extra <span
+                    style="background: linear-gradient(90deg, #b026ff, #7000ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">IA</span>
+            </div>
+            <a href="#oferta" class="btn btn-sm">QUERO ACESSO</a>
+        </div>
+    </header>
+
+    <!-- 3. Hero principal -->
+    <section class="hero pt-120" id="hero-section">
+        <canvas id="particle-canvas" class="particle-canvas"></canvas>
+        <div class="container">
+            <div class="hero-content text-center" style="position: relative;">
+                <div class="title-glow"></div>
+                <h1 class="hero-title reveal">Enquanto você lê isso, alguém está faturando com vídeos que uma IA criou
+                    pra ele.</h1>
+                <p class="hero-subtitle reveal delay-1">O segredo que criadores profissionais usam pra produzir vídeos
+                    em escala — sem aparecer, sem editar, sem complicar.</p>
+
+                <div class="hero-extra-vimeo reveal delay-2">
+                    <div class="hero-vimeo-card custom-vimeo-wrapper">
+                        <div style="padding:177.78% 0 0 0;position:relative;">
+                            <iframe class="custom-vimeo-iframe" src="https://player.vimeo.com/video/1195953461?controls=0&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;dnt=1&amp;playsinline=1"
+                                frameborder="0"
+                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                title="EXTRA IA">
+                            </iframe>
+                            <div class="custom-vimeo-overlay">
+                                <i class="fa-solid fa-play custom-play-icon"></i>
+                                <span class="custom-play-text">Clique para assistir</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="stats-grid reveal delay-3">
+                    <div class="stat-card">
+                        <h3>30+</h3>
+                        <p>vídeos por dia</p>
+                    </div>
+                    <div class="stat-card highlight-card">
+                        <h3>R$17,90</h3>
+                        <p>Lote 1</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Mensal</h3>
+                        <p>assinatura</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>0%</h3>
+                        <p>câmera necessária</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Seção de prova rápida -->
+    <section class="prova-rapida section-padding bg-darker">
+        <div class="container">
+            <h2 class="section-title text-center reveal">Não é mágica. É método.</h2>
+            <div class="grid-3 reveal delay-1">
+                <div class="card card-neon">
+                    <i class="fa-solid fa-bolt icon-neon"></i>
+                    <p>30+ vídeos criados por dia com o método Extra IA</p>
+                </div>
+                <div class="card card-neon">
+                    <i class="fa-solid fa-stopwatch icon-neon"></i>
+                    <p>Primeiro vídeo em menos de 30 Minutos</p>
+                </div>
+                <div class="card card-neon">
+                    <i class="fa-solid fa-video-slash icon-neon"></i>
+                    <p>Zero necessidade de aparecer na câmera</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Seção de dor -->
+    <section class="dores section-padding">
+        <div class="glow glow-2"></div>
+        <div class="container">
+            <h2 class="section-title text-center reveal">Você trava enquanto outros produzem em escala.</h2>
+            <div class="grid-4 reveal delay-1">
+                <div class="card card-dark">
+                    <i class="fa-regular fa-clock icon-red"></i>
+                    <p>Horas para criar um único vídeo</p>
+                </div>
+                <div class="card card-dark">
+                    <i class="fa-regular fa-face-frown icon-red"></i>
+                    <p>Não quer aparecer na câmera</p>
+                </div>
+                <div class="card card-dark">
+                    <i class="fa-solid fa-money-bill-wave icon-red"></i>
+                    <p>Ferramentas caras e complicadas</p>
+                </div>
+                <div class="card card-dark">
+                    <i class="fa-solid fa-arrow-trend-down icon-red"></i>
+                    <p>Falta de consistência para crescer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Seção de solução -->
+    <section class="solucao section-padding bg-darker">
+        <div class="container">
+            <h2 class="section-title text-center reveal">Você só precisa da ferramenta certa. Nada mais.</h2>
+            <div class="steps-container reveal delay-1">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <p>Assina por R$17,90/mês</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <p>Aplica o método Extra IA</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <p>Cria vídeos em escala</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">04</div>
+                    <p>Usa para canal dark, criativos ou venda como serviço</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Seção “Para quem é” -->
+    <section class="para-quem section-padding">
+        <div class="container">
+            <div class="grid-2 align-center">
+                <div class="para-quem-img reveal">
+                    <div class="glow-box"></div>
+                    <!-- Logo brandmark showcase -->
+                    <div class="tech-graphic logo-showcase">
+                        <svg class="brand-logo-large" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="neonGradientLarge" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#b026ff">
+                                        <animate attributeName="stop-color" values="#b026ff;#d055ff;#b026ff" dur="4s"
+                                            repeatCount="indefinite" />
+                                    </stop>
+                                    <stop offset="100%" stop-color="#7000ff">
+                                        <animate attributeName="stop-color" values="#7000ff;#b026ff;#7000ff" dur="4s"
+                                            repeatCount="indefinite" />
+                                    </stop>
+                                </linearGradient>
+                                <filter id="neonGlowLarge" x="-20%" y="-20%" width="140%" height="140%">
+                                    <feGaussianBlur stdDeviation="2" result="blur1" />
+                                    <feGaussianBlur stdDeviation="4" result="blur2" />
+                                    <feMerge>
+                                        <feMergeNode in="blur2" />
+                                        <feMergeNode in="blur1" />
+                                        <feMergeNode in="SourceGraphic" />
+                                    </feMerge>
+                                </filter>
+                            </defs>
+                            <g stroke="url(#neonGradientLarge)" stroke-width="4" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round" filter="url(#neonGlowLarge)">
+                                <!-- Top line & circle -->
+                                <circle cx="22" cy="38" r="3" />
+                                <path d="M25,38 L44,38" />
+
+                                <!-- Middle line & circle -->
+                                <circle cx="16" cy="50" r="3" />
+                                <path d="M19,50 L28,50 L34,44 L52,44" />
+
+                                <!-- Bottom line & circle -->
+                                <circle cx="22" cy="62" r="3" />
+                                <path d="M25,62 L28,62 L34,56 L44,56" />
+
+                                <!-- Arrow -->
+                                <path
+                                    d="M44,38 L44,35 C44,30 48,29 52,31 L84,47 C88,49 88,51 84,53 L52,69 C48,71 44,70 44,65 L44,56" />
+                            </g>
+                            <g fill="#fff" filter="url(#neonGlowLarge)">
+                                <circle r="2">
+                                    <animateMotion dur="2.5s" repeatCount="indefinite" path="M25,38 L44,38" />
+                                    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.2;0.8;1" dur="2.5s"
+                                        repeatCount="indefinite" />
+                                </circle>
+                                <circle r="2">
+                                    <animateMotion dur="2s" repeatCount="indefinite"
+                                        path="M19,50 L28,50 L34,44 L52,44" />
+                                    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.2;0.8;1" dur="2s"
+                                        repeatCount="indefinite" />
+                                </circle>
+                                <circle r="2">
+                                    <animateMotion dur="3s" repeatCount="indefinite"
+                                        path="M25,62 L28,62 L34,56 L44,56" />
+                                    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.2;0.8;1" dur="3s"
+                                        repeatCount="indefinite" />
+                                </circle>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="para-quem-content reveal delay-1">
+                    <h2 class="section-title text-left">Para quem é o Extra IA?</h2>
+                    <ul class="check-list">
+                        <li><i class="fa-solid fa-check text-neon"></i> Quem quer criar canal no YouTube sem aparecer
+                        </li>
+                        <li><i class="fa-solid fa-check text-neon"></i> Quem quer renda extra com IA</li>
+                        <li><i class="fa-solid fa-check text-neon"></i> Quem quer vender vídeos como serviço</li>
+                        <li><i class="fa-solid fa-check text-neon"></i> Quem não sabe editar</li>
+                        <li><i class="fa-solid fa-check text-neon"></i> Quem quer criar conteúdo em escala</li>
+                        <li><i class="fa-solid fa-check text-neon"></i> Quem quer começar com baixo investimento</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nova Seção: Exemplos de Vídeos com IA -->
+    <section class="video-examples section-padding">
+        <div class="container">
+            <h2 class="section-title text-center reveal">Veja exemplos criados com IA</h2>
+            <p class="text-center text-muted reveal delay-1" style="max-width: 600px; margin: -30px auto 40px auto; font-size: 1.1rem;">
+                Vídeos curtos, dinâmicos e prontos para usar em anúncios, Reels, Shorts ou canal dark.
+            </p>
+
+            <div class="video-examples-grid reveal delay-2">
+                <!-- Vídeo 1 -->
+                <div class="example-vimeo-card">
+                    <div style="padding:177.78% 0 0 0;position:relative;">
+                        <iframe src="https://player.vimeo.com/video/1195959551?background=1&amp;dnt=1&amp;playsinline=1&amp;preload=metadata" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;" title="IA"></iframe>
+                    </div>
+                </div>
+
+                <!-- Vídeo 2 -->
+                <div class="example-vimeo-card">
+                    <div style="padding:177.78% 0 0 0;position:relative;">
+                        <iframe src="https://player.vimeo.com/video/1195960999?background=1&amp;dnt=1&amp;playsinline=1&amp;preload=metadata" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;" title="."></iframe>
+                    </div>
+                </div>
+
+                <!-- Vídeo 3 -->
+                <div class="example-vimeo-card">
+                    <div style="padding:177.78% 0 0 0;position:relative;">
+                        <iframe src="https://player.vimeo.com/video/1195961517?background=1&amp;dnt=1&amp;playsinline=1&amp;preload=metadata" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;" title="IA0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Seção de módulos -->
+    <section class="modulos section-padding bg-darker">
+        <div class="container">
+            <h2 class="section-title text-center reveal">Conteúdo direto ao ponto. Sem enrolação.</h2>
+            <div class="modulos-list reveal delay-1">
+                <div class="modulo-item">
+                    <div class="modulo-num">01</div>
+                    <h3>Introdução e configuração da ferramenta</h3>
+                </div>
+                <div class="modulo-item">
+                    <div class="modulo-num">02</div>
+                    <h3>Criando vídeos em escala</h3>
+                </div>
+                <div class="modulo-item">
+                    <div class="modulo-num">03</div>
+                    <h3>Canal dark do zero</h3>
+                </div>
+                <div class="modulo-item">
+                    <div class="modulo-num">04</div>
+                    <h3>Venda como serviço</h3>
+                </div>
+                <div class="modulo-item">
+                    <div class="modulo-num">05</div>
+                    <h3>Monetização do conteúdo</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Seção de comparação -->
+    <section class="comparacao section-padding">
+        <div class="glow glow-3"></div>
+        <div class="container">
+            <div class="comparacao-wrapper reveal">
+                <div class="comp-col antigo">
+                    <h3 class="comp-title text-red">Jeito antigo</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-xmark"></i> Horas editando por vídeo</li>
+                        <li><i class="fa-solid fa-xmark"></i> Precisa aparecer na câmera</li>
+                        <li><i class="fa-solid fa-xmark"></i> Ferramentas caras por mês</li>
+                        <li><i class="fa-solid fa-xmark"></i> Resultado lento</li>
+                        <li><i class="fa-solid fa-xmark"></i> Sem consistência</li>
+                    </ul>
+                </div>
+                <div class="comp-vs">VS</div>
+                <div class="comp-col extra-ia">
+                    <h3 class="comp-title text-neon">Extra IA</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Vídeos prontos em minutos</li>
+                        <li><i class="fa-solid fa-check"></i> 100% sem aparecer</li>
+                        <li><i class="fa-solid fa-check"></i> Baixo custo mensal</li>
+                        <li><i class="fa-solid fa-check"></i> Método direto ao ponto</li>
+                        <li><i class="fa-solid fa-check"></i> Produção em escala</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Seção de bônus -->
+    <section class="bonus section-padding bg-darker">
+        <div class="container">
+            <h2 class="section-title text-center reveal">Bônus Exclusivos</h2>
+            <div class="grid-3 reveal delay-1">
+                <div class="card card-bonus">
+                    <div class="bonus-tag">BÔNUS 01</div>
+                    <h3>Pack de Scripts Prontos</h3>
+                    <p>30 roteiros prontos em nichos quentes como finanças, saúde e motivação.</p>
+                </div>
+                <div class="card card-bonus">
+                    <div class="bonus-tag">BÔNUS 02</div>
+                    <h3>Guia Canal Dark do Zero</h3>
+                    <p>PDF ensinando como montar, nomear e configurar um canal sem aparecer.</p>
+                </div>
+                <div class="card card-bonus">
+                    <div class="bonus-tag">BÔNUS 03</div>
+                    <h3>100 Prompts para Vídeos de IA</h3>
+                    <p>Prompts prontos para gerar roteiros, cenas, narrações e vídeos automaticamente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. Seção de depoimentos -->
+    <section class="depoimentos section-padding">
+        <div class="container">
+            <h2 class="section-title text-center reveal">Quem já aplica está lucrando</h2>
+            <div class="carousel-container reveal delay-1">
+                <div class="carousel-track">
+                    <!-- Original items -->
+                    <div class="carousel-card">
+                        <img src="prova1.png" alt="Prova 1">
+                    </div>
+                    <div class="carousel-card">
+                        <img src="prova2.png" alt="Prova 2">
+                    </div>
+                    <div class="carousel-card">
+                        <img src="prova3.png" alt="Prova 3">
+                    </div>
+                    <div class="carousel-card">
+                        <img src="prova4.png" alt="Prova 4">
+                    </div>
+                    <!-- Duplicated items for infinite scroll -->
+                    <div class="carousel-card" aria-hidden="true">
+                        <img src="prova1.png" alt="Prova 1">
+                    </div>
+                    <div class="carousel-card" aria-hidden="true">
+                        <img src="prova2.png" alt="Prova 2">
+                    </div>
+                    <div class="carousel-card" aria-hidden="true">
+                        <img src="prova3.png" alt="Prova 3">
+                    </div>
+                    <div class="carousel-card" aria-hidden="true">
+                        <img src="prova4.png" alt="Prova 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. Seção de oferta -->
+    <section id="oferta" class="oferta section-padding bg-darker">
+        <div class="glow glow-4"></div>
+        <div class="container">
+            <h2 class="section-title text-center reveal">Entra agora. Sem desculpa.</h2>
+
+            <div class="oferta-box reveal delay-1">
+                <div class="oferta-header">
+                    <span class="lote-tag">🔥 LOTE 1 — PREÇO MAIS BAIXO</span>
+                </div>
+
+                <div class="oferta-body">
+                    <div class="precos">
+                        <div class="preco-proximo-lote">Próximo lote: R$47/mês</div>
+                        <div class="preco-atual">
+                            <span class="currency">R$</span>
+                            <span class="value">17,90</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <p class="preco-desc">Assinatura mensal recorrente • cancele quando quiser • sem fidelidade</p>
+                    </div>
+
+                    <ul class="oferta-beneficios">
+                        <li><i class="fa-solid fa-circle-check"></i> Acesso completo ao Sistema e todos os módulos</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Todas as atualizações incluídas</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Acesso aos 3 bônus exclusivos</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Cancele a qualquer momento</li>
+                    </ul>
+
+                    <div class="escassez-box" id="escassez-box">
+                        <i class="fa-solid fa-bolt pulse-icon"></i>
+                        <div class="escassez-text">
+                            <strong><span id="vagas-count">46</span> vagas restantes neste lote</strong>
+                            <span>Após o encerramento, o valor sobe para R$47/mês</span>
+                        </div>
+                    </div>
+
+                    <a href="https://pay.cakto.com.br/awc89qw_898509" onclick="irParaCheckout(event, 'https://pay.cakto.com.br/awc89qw_898509')" class="btn btn-large btn-glow">QUERO MEU ACESSO
+                        AGORA</a>
+                    <p class="seguranca-text"><i class="fa-solid fa-lock"></i> pagamento 100% seguro • acesso imediato
+                    </p>
+                </div>
+            </div>
+
+            <div class="garantia-suporte grid-2 reveal delay-2">
+                <div class="card card-garantia">
+                    <i class="fa-solid fa-shield-halved text-neon icon-large"></i>
+                    <h3>Garantia de 7 dias</h3>
+                    <p>Não ficou satisfeito por qualquer motivo? Devolvemos 100% do seu dinheiro.</p>
+                </div>
+                <div class="card card-suporte">
+                    <i class="fa-brands fa-whatsapp text-neon icon-large"></i>
+                    <h3>Suporte Rápido</h3>
+                    <p>Dúvidas antes de comprar? <a href="#" class="text-neon">Fale com a gente no WhatsApp.</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13. FAQ -->
+    <section class="faq section-padding">
+        <div class="container faq-container">
+            <h2 class="section-title text-center reveal">Perguntas Frequentes</h2>
+            <div class="faq-list reveal delay-1">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Preciso ter experiência com vídeo ou edição?</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Não. O método Extra IA foi desenhado para iniciantes absolutos. A inteligência artificial
+                            fará todo o trabalho pesado por você.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Preciso aparecer nos vídeos?</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>De forma alguma. Nosso foco principal é a criação de canais dark e vídeos onde você não
+                            precisa mostrar o rosto ou usar sua voz real.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quanto custa a ferramenta de IA além do curso?</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ensinamos a usar ferramentas gratuitas ou com planos gratuitos generosos para que você possa
+                            começar sem custos adicionais.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Em quanto tempo vejo resultado?</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Isso depende da sua dedicação, mas a maioria dos nossos alunos cria o primeiro vídeo
+                            profissional em menos de 2 horas aplicando o método.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Funciona pelo celular?</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Muitas das ferramentas podem ser acessadas pelo celular, embora um computador possa
+                            agilizar o processo de produção em escala.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>E se eu não gostar?</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Você tem 7 dias de garantia incondicional. Basta enviar um e-mail que devolvemos 100% do seu
+                            dinheiro, sem perguntas.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Como acesso após a compra?</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Assim que o pagamento for aprovado, você receberá um e-mail com seu login e senha para
+                            acessar a área de membros imediatamente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 14. CTA final -->
+    <section class="cta-final section-padding bg-darker">
+        <div class="glow glow-1"></div>
+        <div class="container text-center reveal">
+            <h2 class="hero-title">Chega de assistir. Começa a criar.</h2>
+            <p class="hero-subtitle mt-20">A ferramenta certa muda tudo. E ela custa R$17,90.</p>
+            <a href="#oferta" class="btn btn-large btn-glow mt-40">GARANTIR MINHA VAGA</a>
+        </div>
+    </section>
+
+    <!-- 15. Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo" style="display: flex; align-items: center; cursor: pointer; gap: 8px;">
+                    <svg class="brand-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="neonGradientFooter" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#b026ff">
+                                    <animate attributeName="stop-color" values="#b026ff;#d055ff;#b026ff" dur="4s"
+                                        repeatCount="indefinite" />
+                                </stop>
+                                <stop offset="100%" stop-color="#7000ff">
+                                    <animate attributeName="stop-color" values="#7000ff;#b026ff;#7000ff" dur="4s"
+                                        repeatCount="indefinite" />
+                                </stop>
+                            </linearGradient>
+                            <filter id="neonGlowFooter" x="-20%" y="-20%" width="140%" height="140%">
+                                <feGaussianBlur stdDeviation="2" result="blur1" />
+                                <feGaussianBlur stdDeviation="4" result="blur2" />
+                                <feMerge>
+                                    <feMergeNode in="blur2" />
+                                    <feMergeNode in="blur1" />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <g stroke="url(#neonGradientFooter)" stroke-width="4" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round" filter="url(#neonGlowFooter)">
+                            <circle cx="22" cy="38" r="3" />
+                            <path d="M25,38 L44,38" />
+                            <circle cx="16" cy="50" r="3" />
+                            <path d="M19,50 L28,50 L34,44 L52,44" />
+                            <circle cx="22" cy="62" r="3" />
+                            <path d="M25,62 L28,62 L34,56 L44,56" />
+                            <path
+                                d="M44,38 L44,35 C44,30 48,29 52,31 L84,47 C88,49 88,51 84,53 L52,69 C48,71 44,70 44,65 L44,56" />
+                        </g>
+                    </svg>
+                    Extra <span
+                        style="background: linear-gradient(90deg, #b026ff, #7000ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">IA</span>
+                </div>
+                <p class="copyright">© 2026 Extra IA — Todos os direitos reservados</p>
+                <div class="footer-links">
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 2. Banner fixo inferior de urgência -->
+    <div class="bottom-banner">
+        <div class="container banner-content">
+            <p>⚡ ASSINATURA MENSAL POR R$17,90 — ACESSO COMPLETO + ATUALIZAÇÕES SEMANAIS</p>
+            <a href="#oferta" class="btn btn-sm banner-btn">GARANTIR AGORA</a>
+        </div>
+    </div>
+
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
